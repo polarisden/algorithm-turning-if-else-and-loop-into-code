@@ -7,7 +7,18 @@
 */
 
 // Start coding here
-
+function countDogByBreed(breedArray) {
+    let data = {}
+    for (let key of breedArray) {
+        if (data[key] ===  undefined) {
+            key
+            data[key] = 1
+        } else {
+            data[key] += 1
+        }
+    }
+    return data
+}
 const breedArray1 = [
     "Beagle",
     "Labrador Retriever",
